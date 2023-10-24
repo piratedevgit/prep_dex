@@ -1,6 +1,6 @@
 import Earn from "./pages/earn";
-import Feeds from "./pages/feed";
 import Stats from "./pages/stats";
+//import Feeds from "./pages/feed";
 
 function App() {
   return <Stats />;
