@@ -2,13 +2,11 @@ import { CSSProperties } from "react";
 import { PageTitle } from "../../components/custom";
 import PrivateLayout from "../../layouts/private";
 import {
-  Avatar,
   Button,
   Card,
   Col,
   Divider,
   DividerProps,
-  Image,
   Row,
   Space,
   Typography,
@@ -16,7 +14,7 @@ import {
 import { TextProps } from "antd/es/typography/Text";
 import { TitleProps } from "antd/es/typography/Title";
 
-const { Paragraph, Text, Link, Title } = Typography;
+const { Text, Title } = Typography;
 
 const CustomText = (props: TextProps) => {
   return <Text className="text-[17px]" {...props} />;

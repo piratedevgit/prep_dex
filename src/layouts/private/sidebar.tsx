@@ -40,7 +40,7 @@ export default function Sidebar() {
       <div className="w-[206px] h-[80px] text-[#1D9BF0] text-[24px] font-[600] flex justify-center items-center pb-2 -ml-3">
         LOGO HERE
       </div>
-      <Menu defaultSelectedKeys={["earn"]} mode="inline" items={items} />
+      <Menu defaultSelectedKeys={["stats"]} mode="inline" items={items} />
     </Sider>
   );
 }
