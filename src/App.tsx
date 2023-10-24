@@ -1,7 +1,7 @@
-import PrivateLayout from "./layouts/private";
+import Feeds from "./pages/feed";
 
 function App() {
-  return <PrivateLayout>Hi man</PrivateLayout>;
+  return <Feeds />;
 }
 
 export default App;

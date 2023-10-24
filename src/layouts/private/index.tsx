@@ -1,7 +1,8 @@
 import { Layout } from "antd";
-import { ReactNode } from "react";
+import { ReactNode, CSSProperties } from "react";
 import Sidebar from "./sidebar";
-const { Header, Footer, Content } = Layout;
+import Header from "./header";
+const { Footer, Content } = Layout;
 
 interface PrivateLayoutProps {
   children: ReactNode;
@@ -12,16 +13,23 @@ export default function PrivateLayout({ children }: PrivateLayoutProps) {
     <Layout className="h-full">
       <Sidebar />
       <Layout className="h-full">
-        <Header style={styles.header}>Header</Header>
-        <Content>{children}</Content>
-        <Footer style={styles.header}>Footer</Footer>
+        <Header />
+        <Content className="h-[calc(100%-151px)] overflow-y-auto">
+          {children}
+        </Content>
+        <Footer style={styles.footer}>Footer</Footer>
       </Layout>
     </Layout>
   );
 }
 
-const styles = {
-  header: {
+interface Styles {
+  footer: CSSProperties;
+}
+
+const styles: Styles = {
+  footer: {
     background: "white",
+    height: "68px",
   },
 };

@@ -1,11 +1,11 @@
 import { Layout, Menu, MenuProps } from "antd";
 import {
-  DesktopOutlined,
-  FileOutlined,
-  PieChartOutlined,
-  TeamOutlined,
-  UserOutlined,
-} from "@ant-design/icons";
+  FeedIcon,
+  GetFoundedIcon,
+  PortfolioIcon,
+  StatesIcon,
+  TradeIcon,
+} from "../../components/SVG";
 const { Sider } = Layout;
 
 type MenuItem = Required<MenuProps>["items"][number];
@@ -26,26 +26,19 @@ function getItem(
 
 export default function Sidebar() {
   const items: MenuItem[] = [
-    getItem("Option 1", "1", <PieChartOutlined />),
-    getItem("Option 2", "2", <DesktopOutlined />),
-    getItem("User", "sub1", <UserOutlined />, [
-      getItem("Tom", "3"),
-      getItem("Bill", "4"),
-      getItem("Alex", "5"),
-    ]),
-    getItem("Team", "sub2", <TeamOutlined />, [
-      getItem("Team 1", "6"),
-      getItem("Team 2", "8"),
-    ]),
-    getItem("Files", "9", <FileOutlined />),
+    getItem("Feed", "feed", <FeedIcon />),
+    getItem("Portfolio", "portfolio", <PortfolioIcon />),
+    getItem("Stats", "stats", <StatesIcon />),
+    getItem("Trade", "trade", <TradeIcon />),
+    getItem("Get Founded", "getFounded", <GetFoundedIcon />),
   ];
 
   return (
     <Sider theme="light" className="h-full py-4" width={250}>
-      <div className="w-[206px] h-[80px] text-[#1D9BF0] text-[24px] font-[600] flex justify-center items-center pb-4">
+      <div className="w-[206px] h-[80px] text-[#1D9BF0] text-[24px] font-[600] flex justify-center items-center pb-2 -ml-3">
         LOGO HERE
       </div>
-      <Menu defaultSelectedKeys={["1"]} mode="inline" items={items} />
+      <Menu defaultSelectedKeys={["feed"]} mode="inline" items={items} />
     </Sider>
   );
 }
