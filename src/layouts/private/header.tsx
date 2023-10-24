@@ -9,9 +9,7 @@ export default function Header() {
       <Row className="h-full" justify="end" align="middle">
         <Col>
           <Space size={20} align="center">
-            <Button type="primary" danger>
-              Connect Wallet
-            </Button>
+            <Button type="primary">Connect Wallet</Button>
             <Space size={10} align="center">
               <Avatar
                 size={36}

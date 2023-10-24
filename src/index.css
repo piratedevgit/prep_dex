@@ -12,3 +12,7 @@ body,
 #feed-image {
   width: 100%;
 }
+
+:where(.css-dev-only-do-not-override-xu9wm8).ant-btn-primary {
+  background-color: #1677ff;
+}
