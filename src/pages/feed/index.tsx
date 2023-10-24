@@ -10,6 +10,7 @@ import {
 } from "antd";
 import PrivateLayout from "../../layouts/private";
 import { CommentIcon, HeartIcon, SavedIcon } from "../../components/SVG";
+import { PageTitle } from "../../components/custom";
 
 const { Title, Paragraph, Text, Link } = Typography;
 
@@ -33,9 +34,9 @@ function Feeds() {
   const cardFooterText = "text-[15px]";
   return (
     <PrivateLayout>
-      <Row justify="center" className="pt-4">
+      <Row justify="center">
         <Col span={20}>
-          <Title level={2}> Feed </Title>
+          <PageTitle> Feed </PageTitle>
           <Row gutter={50}>
             <Col span={14}>
               {feeds.map((_, index) => {

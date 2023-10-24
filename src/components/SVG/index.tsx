@@ -7,6 +7,7 @@ import { ReactComponent as GetFounded } from "./get-founded.svg";
 import { ReactComponent as Heart } from "./heart.svg";
 import { ReactComponent as Saved } from "./saved.svg";
 import { ReactComponent as Comment } from "./comment.svg";
+import { ReactComponent as Earn } from "./earn.svg";
 
 interface IconProps {
   height?: number | string;
@@ -42,4 +43,7 @@ export const CommentIcon = (props: IconProps) => {
 };
 export const SavedIcon = (props: IconProps) => {
   return <Icon component={Saved} {...props} />;
+};
+export const EarnIcon = (props: IconProps) => {
+  return <Icon component={Earn} {...props} />;
 };

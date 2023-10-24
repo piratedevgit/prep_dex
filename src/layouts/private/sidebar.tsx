@@ -1,5 +1,6 @@
 import { Layout, Menu, MenuProps } from "antd";
 import {
+  EarnIcon,
   FeedIcon,
   GetFoundedIcon,
   PortfolioIcon,
@@ -31,6 +32,7 @@ export default function Sidebar() {
     getItem("Stats", "stats", <StatesIcon />),
     getItem("Trade", "trade", <TradeIcon />),
     getItem("Get Founded", "getFounded", <GetFoundedIcon />),
+    getItem("Earn", "earn", <EarnIcon />),
   ];
 
   return (
@@ -38,7 +40,7 @@ export default function Sidebar() {
       <div className="w-[206px] h-[80px] text-[#1D9BF0] text-[24px] font-[600] flex justify-center items-center pb-2 -ml-3">
         LOGO HERE
       </div>
-      <Menu defaultSelectedKeys={["feed"]} mode="inline" items={items} />
+      <Menu defaultSelectedKeys={["earn"]} mode="inline" items={items} />
     </Sider>
   );
 }

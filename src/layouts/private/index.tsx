@@ -16,7 +16,7 @@ export default function PrivateLayout({ children }: PrivateLayoutProps) {
         <Sidebar />
         <Layout className="h-full">
           <Header />
-          <Content className="h-[calc(100%-151px)] overflow-y-auto">
+          <Content className="h-[calc(100%-151px)] overflow-y-auto px-[30px] py-4">
             {children}
           </Content>
         </Layout>
