@@ -1,22 +1,18 @@
 import {
-  Avatar,
   Card,
   Col,
-  Divider,
-  Image,
   Progress,
   Row,
   Space,
   Typography,
 } from "antd";
 import PrivateLayout from "../../layouts/private";
-import { CommentIcon, HeartIcon, SavedIcon } from "../../components/SVG";
 import { PageTitle } from "../../components/custom";
 import { TextProps } from "antd/es/typography/Text";
 import { TitleProps } from "antd/es/typography/Title";
 import { CSSProperties } from "react";
 
-const { Title, Paragraph, Text, Link } = Typography;
+const { Title, Text } = Typography;
 
 const CustomText = (props: TextProps) => {
   return <Text className="text-[17px]" {...props} />;

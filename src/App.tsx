@@ -1,4 +1,4 @@
-import Earn from "./pages/earn";
+//import Earn from "./pages/earn";
 import Stats from "./pages/stats";
 //import Feeds from "./pages/feed";
 
