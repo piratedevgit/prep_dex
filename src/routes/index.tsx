@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Earn from "../pages/earn";
 import Stats from "../pages/stats";
 import Feeds from "../pages/feed";
+import Notfound from "../pages/notfound";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "/stats",
     element: <Stats />,
+  },
+  {
+    path: "*",
+    element: <Notfound />,
   },
 ]);
 
