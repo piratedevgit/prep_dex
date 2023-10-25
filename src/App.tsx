@@ -1,9 +1,7 @@
-import Earn from "./pages/earn";
-import Stats from "./pages/stats";
-//import Feeds from "./pages/feed";
+import Routes from "./routes";
 
 function App() {
-  return <Stats />;
+  return <Routes />;
 }
 
 export default App;

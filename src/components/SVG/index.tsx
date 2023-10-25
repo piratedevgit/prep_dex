@@ -8,6 +8,11 @@ import { ReactComponent as Heart } from "./heart.svg";
 import { ReactComponent as Saved } from "./saved.svg";
 import { ReactComponent as Comment } from "./comment.svg";
 import { ReactComponent as Earn } from "./earn.svg";
+import { ReactComponent as Chart } from "./chart.svg";
+import { ReactComponent as Mint } from "./mint.svg";
+import { ReactComponent as Tradepad } from "./tradapad.svg";
+import { ReactComponent as Profile } from "./profile.svg";
+import { ReactComponent as Docs } from "./docs.svg";
 
 interface IconProps {
   height?: number | string;
@@ -46,4 +51,19 @@ export const SavedIcon = (props: IconProps) => {
 };
 export const EarnIcon = (props: IconProps) => {
   return <Icon component={Earn} {...props} />;
+};
+export const ChartIcon = (props: IconProps) => {
+  return <Icon component={Chart} {...props} />;
+};
+export const TradepadIcon = (props: IconProps) => {
+  return <Icon component={Tradepad} {...props} />;
+};
+export const ProfileIcon = (props: IconProps) => {
+  return <Icon component={Profile} {...props} />;
+};
+export const DocsIcon = (props: IconProps) => {
+  return <Icon component={Docs} {...props} />;
+};
+export const MintIcon = (props: IconProps) => {
+  return <Icon component={Mint} {...props} />;
 };
