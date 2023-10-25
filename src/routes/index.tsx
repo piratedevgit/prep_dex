@@ -3,6 +3,7 @@ import Earn from "../pages/earn";
 import Stats from "../pages/stats";
 import Feeds from "../pages/feed";
 import Notfound from "../pages/notfound";
+import Mint from "../pages/mint";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "/stats",
     element: <Stats />,
+  },
+  {
+    path: "/mint",
+    element: <Mint />,
   },
   {
     path: "*",
